@@ -46,10 +46,17 @@ $(function () {
 		}
 	});
 });
-/* Слайдер */
+/* Слайдер 1 */
+	$('.crsl-items').carousel({
+		itemMinWidth: 300,
+		autoRotate: false,
+		speed: 300,
+	  visible: 3,
+	});
+
+/* Слайдер 2 */
 $(".carousel").carousel({
-    number: 3,
-	interval: 5000,
+	interval: 2000,
 	pause: "hover"
 });
 /* Видео */
