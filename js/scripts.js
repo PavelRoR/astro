@@ -48,6 +48,7 @@ $(function () {
 });
 /* Слайдер */
 $(".carousel").carousel({
+    number: 3,
 	interval: 5000,
 	pause: "hover"
 });
