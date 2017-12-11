@@ -55,10 +55,10 @@ $(function () {
 	});
 
 /* Слайдер 2 */
-$(".carousel").carousel({
-	interval: 2000,
-	pause: "hover"
-});
+// $(".carousel").carousel({
+// 	interval: 2000,
+// 	pause: "hover"
+// });
 /* Видео */
 $(".video_img").click(function () {
 	var a = $(this).attr("data-youtube");
