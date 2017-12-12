@@ -46,12 +46,27 @@ $(function () {
 		}
 	});
 });
-/* Слайдер 1 */
-	$('.crsl-items').carousel({
+/* Слайдер Причин */
+	$('.risons-crsl-items').carousel({
 		itemMinWidth: 300,
 		autoRotate: false,
 		speed: 300,
 	  visible: 3,
+	});
+/* Слайдер с Видео */
+	$('.video-crsl-items').carousel({
+		itemMinWidth: 300,
+		autoRotate: false,
+		speed: 300,
+	  visible: 1,
+	});
+/* Слайдер с Текстовыми отзывами */
+	$('.text-crsl-items').carousel({
+		itemMinWidth: 300,
+		autoRotate: false,
+		speed: 300,
+	  visible: 1,
+	  itemEqualHeight: true
 	});
 
 /* Слайдер 2 */
