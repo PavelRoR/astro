@@ -50,15 +50,15 @@ $(function () {
 	$('.risons-crsl-items').carousel({
 		itemMinWidth: 300,
 		autoRotate: false,
-		speed: 300,
-	  visible: 3,
+		speed: 600,
+	  visible: 3
 	});
 /* Слайдер с Видео */
 	$('.video-crsl-items').carousel({
 		itemMinWidth: 300,
 		autoRotate: false,
 		speed: 300,
-	  visible: 1,
+	  visible: 1
 	});
 /* Слайдер с Текстовыми отзывами */
 	$('.text-crsl-items').carousel({
