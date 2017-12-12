@@ -68,12 +68,17 @@ $(function () {
 	  visible: 1,
 	  itemEqualHeight: true
 	});
+	$(function() {
+		$("[data-fancybox]").fancybox({
+			speed : 330,
+			opacity : 'auto',
+			// slideShow  : true,
+			// fullScreen : true,
+			// thumbs     : true,
+			closeBtn   : true
+		});
+		});
 
-/* Слайдер 2 */
-// $(".carousel").carousel({
-// 	interval: 2000,
-// 	pause: "hover"
-// });
 /* Видео */
 $(".video_img").click(function () {
 	var a = $(this).attr("data-youtube");
