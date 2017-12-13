@@ -108,3 +108,35 @@ a.button
 @import 'parts/author'
 @import 'parts/testimonials'
 @import 'parts/footer'
+
+/* Medias */
+@media screen and (max-width: 1200px)
+	.contacts .fa
+		margin 0 5px 0 40px
+	.aut_n_date p
+		float: none
+		&first-child
+			margin-right: 0
+	#lidia_main
+		right 0
+	.plan_wrapper
+	#moon
+		width: 100%
+	.author_wrapper img
+		bottom: -18px;
+		margin-bottom: 18px;
+	.education
+		a>img
+			width: 90%
+@media screen and (max-width: 992px)
+	#logo
+		display block
+		margin: 0 auto 10px
+		float: none
+	.contacts
+		float: none
+		text-align: center
+		a:nth-child(2)
+			margin: 0 10px
+		.fa
+			margin: 0 5px;
