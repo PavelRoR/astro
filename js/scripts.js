@@ -66,7 +66,7 @@ $(document).ready(function () {
 		autoRotate: false,
 		speed: 300,
 		visible: 1,
-		itemEqualHeight: true
+		itemEqualHeight: false
 	});
 
 	/* Галерея сертификатов */
