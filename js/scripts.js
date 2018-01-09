@@ -1,4 +1,6 @@
 $(document).ready(function () {
+	/* Скрываем Хэлль */
+	$('.hidden-link').replaceWith(function(){return'<a href="'+$(this).data('link')+'">'+$(this).html()+'</a>';})
 	/* Якорь */
 	$(function () {
 		$("a[href^='#']").click(function (h) {
@@ -61,14 +63,14 @@ $(document).ready(function () {
 		visible: 1
 	});
 	/* Слайдер с Текстовыми отзывами */
+	
 	$('.text-crsl-items').carousel({
 		itemMinWidth: 300,
 		autoRotate: false,
 		speed: 300,
 		visible: 1,
-		itemEqualHeight: false
+		itemEqualHeight: false,
 	});
-
 	/* Галерея сертификатов */
 	$(function () {
 		$("[data-fancybox]").fancybox({
