@@ -111,6 +111,7 @@ a.button
 @import 'parts/you_reach'
 @import 'parts/author'
 @import 'parts/table_section'
+@import 'parts/videos'
 @import 'parts/testimonials'
 @import 'parts/footer'
 @import 'parts/hw'
@@ -324,7 +325,23 @@ a.button
 		margin-bottom: 40px;
 	#risons_slider .crsl-item .item
 		height: 330px
-	
+	.flip-clock-divider
+		width: auto
+	.flip-clock-divider .flip-clock-label
+	.flip-clock-divider.minutes .flip-clock-label
+	.flip-clock-divider.seconds .flip-clock-label
+		left 0
+		right 0
+		margin: 0 auto
+		width: 100px
+	.flip-clock-wrapper ul
+		height: 65px
+	.flip-clock-wrapper ul li
+		line-height: 66px
+	.flip-clock-wrapper ul li a div.up::after
+		top 31px
+	.flip-clock-wrapper ul li a div div.inn
+		font-size: 50px
 @media screen and (max-width: 360px)
 	#header
 		padding-bottom: 0
@@ -350,18 +367,3 @@ a.button
 		line-height: 1.1
 	.alert-danger
 		font-size: 28px
-	.flip-clock-divider
-		width: auto
-	.flip-clock-divider .flip-clock-label
-	.flip-clock-divider.minutes .flip-clock-label
-	.flip-clock-divider.seconds .flip-clock-label
-		left 0
-		right 0
-		margin: 0 auto
-		width: 100px
-	.flip-clock-wrapper ul li
-		line-height: 66px
-	.flip-clock-wrapper ul li a div.up::after
-		top 31px
-	.flip-clock-wrapper ul li a div div.inn
-		font-size: 50px
