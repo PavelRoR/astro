@@ -43,5 +43,23 @@ clock = $('.clock').FlipClock(diff, {
         }
     },
 });
+
+	/* Попап на ДЗ */
+	$(function () {
+		$("body").on("click", ".hw_pic", function (a) {
+			a.preventDefault();
+			$("#" + $(this).attr("data-id")).fadeIn(200);
+			$(".popup_inner").delay(300).animate({
+				top: "1%"
+			}, 300)
+		});
+		$(".close,.popup_back").click(function (a) {
+			a.preventDefault();
+			$(".popup_back").delay(300).fadeOut(200);
+			$(".popup_inner").animate({
+				top: "-135%"
+			}, 300)
+		})
+	});
     /* Конец документа */
 });

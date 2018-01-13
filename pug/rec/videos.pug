@@ -1,29 +1,36 @@
 section#videos
-    .container
-        h3 Записи интенсива
-        .videos_wrapper
-            .days
-                h4 День 1
-                .video_wrapper
-                    iframe(src="https://www.youtube.com/embed/?rel=0&autoplay=0", allowfullscreen)
-                p Текст домашнего задания
-            .days
-                h4 День 2
-                .video_wrapper
-                    iframe(src="https://www.youtube.com/embed/?rel=0&autoplay=0", allowfullscreen)
-                p Текст домашнего задания
-            .days
-                h4 День 3
-                .video_wrapper
-                    iframe(src="https://www.youtube.com/embed/?rel=0&autoplay=0", allowfullscreen)
-                p Текст домашнего задания
-            .days
-                h4 День 4
-                .video_wrapper
-                    iframe(src="https://www.youtube.com/embed/?rel=0&autoplay=0", allowfullscreen)
-                p Текст домашнего задания
-            .days
-                h4 День 5
-                .video_wrapper
-                    iframe(src="https://www.youtube.com/embed/?rel=0&autoplay=0", allowfullscreen)
-                p Текст домашнего задания
+	.container
+		h3 Записи интенсива
+		.videos_wrapper
+			.days
+				h4 День 1
+				.video_wrapper
+					iframe(src="https://www.youtube.com/embed/?rel=0&autoplay=0", allowfullscreen)
+				p Текст домашнего задания
+				a.hw_pic(href="javascript: void(0);" data-id="modal_1")
+					img(src="img/4.jpg" alt="Домашнее задание 1")
+					
+			.days
+				h4 День 2
+				.video_wrapper
+					iframe(src="https://www.youtube.com/embed/?rel=0&autoplay=0", allowfullscreen)
+				p Текст домашнего задания
+			.days
+				h4 День 3
+				.video_wrapper
+					iframe(src="https://www.youtube.com/embed/?rel=0&autoplay=0", allowfullscreen)
+				p Текст домашнего задания
+			.days
+				h4 День 4
+				.video_wrapper
+					iframe(src="https://www.youtube.com/embed/?rel=0&autoplay=0", allowfullscreen)
+				p Текст домашнего задания
+			.days
+				h4 День 5
+				.video_wrapper
+					iframe(src="https://www.youtube.com/embed/?rel=0&autoplay=0", allowfullscreen)
+				p Текст домашнего задания
+.popup_back#modal_1
+	.popup_inner
+		img(src="img/4.jpg" alt="Домашнее задание 1")
+		a(class="close" href="javascript: void(0);")
