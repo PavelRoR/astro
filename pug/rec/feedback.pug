@@ -1,0 +1,9 @@
+section#feedback
+	.container
+		h3 Обратная связь
+		.col-md-6
+			#vk_comments
+			script(type="text/javascript")
+				| VK.Widgets.Comments("vk_comments", { limit: 10,  attach: "*" });
+		.col-md-6
+			.fb-comments(data-href="https://mastervision.su/astro-star-magic/records.html" data-width="100%" data-numposts="15")

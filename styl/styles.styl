@@ -88,7 +88,8 @@ h3
 		height: 4px
 		margin: 15px auto 70px
 		background-color: #288ba0
-
+.flip-clock-divider .flip-clock-label
+	font-size: 18px;
 a.button
 	font-family: 'OswaldMedium', arial;
 	min-width: 300px
@@ -112,7 +113,7 @@ a.button
 @import 'parts/table_section'
 @import 'parts/testimonials'
 @import 'parts/footer'
-
+@import 'parts/hw'
 /* Medias */
 @media screen and (max-width: 1199px)
 	.contacts .fa
@@ -191,6 +192,14 @@ a.button
 	#video_slider
 		.video_wrapper
 			width: 70%
+	#hw .video_wrapper
+		width: 80%
+	#you_reach .item
+	.flip-clock-wrapper
+		width: 100%
+	#pay_table .buttons td .button
+		font-size: 18px
+	
 @media screen and (max-width: 768px)
 	#risons_slider .crsl-item .item
 		height: 340px
@@ -210,6 +219,17 @@ a.button
 		margin-bottom: 5px
 	#video_slider .slidernav
 		width: 580px
+	#pay_table
+		display: none
+	#mob_pay_table
+		display block
+	#course_first_screen_section .aut_n_date, #rec_first_screen_section .aut_n_date
+		width: 100%
+		text-align: center
+	#course_first_screen_section .aut_n_date p, #rec_first_screen_section .aut_n_date p
+		display: block
+	.aut_n_date p:first-child
+		margin: 0
 @media screen and (max-width: 660px)
 	.contacts a
 		display block
@@ -230,10 +250,16 @@ a.button
 	#risons_slider .crsl-item .item
 		height: 240px
 	#video_slider .slidernav
+	#mob_pay_table
 		width: 100%
 @media screen and (max-width: 560px)
 	#risons_slider .crsl-item .item
 		height: 300px
+	#hw .aut_n_date
+		width: 100%
+		text-align: center
+		span
+			display: block
 @media screen and (max-width: 480px)
 	.contacts .fa + span
 		font-size: 15px
@@ -293,10 +319,14 @@ a.button
 		margin-bottom: 40px;
 	#risons_slider .crsl-item .item
 		height: 330px
+	
 @media screen and (max-width: 360px)
 	h1
 		font-size: 26px
+	#hw #first_screen_section h2
+		font-size: 22px
 	#mail_section .col-md-3 h3
+	#feedback h3
 		font-size: 24px
 	#risons_slider .crsl-item .item
 		height 365px

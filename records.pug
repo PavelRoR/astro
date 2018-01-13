@@ -12,18 +12,21 @@ html(lang="ru")
 		link(rel="icon" type="image/x-icon" href="favicon.ico")
 		link(rel="shortcut icon" type="image/x-icon" href="favicon.png")
 		link(rel="appendix" href="/sitemap/")
-		title Запись на курс «Астрология. Подсказки звезд - секрет счастливой жизни»
+		title Записи бесплатного 5-ти дневного интенсива «Астрология - таинство звезд. Найдите свой путь к здоровью, счастью и деньгам за 5 дней!»
 		link(rel="stylesheet" href="css/bootstrap.min.css")
-		link(rel="stylesheet prefetch" href="css/flipclock.css")
 		link(rel="stylesheet" href="css/styles.css")
-	body#course
+		script(src="//vk.com/js/api/openapi.js?151", type="text/javascript")
+		script(type="text/javascript")
+			| VK.init({apiId:6314801, onlyWidgets: true});
+	body#rec
+		#fb-root
+		script
+			| (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.11&appId=1039482812818888';fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'))
 		#main_screen
 			include pug/header
-			include pug/course/course_first_screen_section.pug
-		include pug/course/course_plan
+			include pug/rec/rec_first_screen_section.pug
 		include pug/course/you_reach
 		include pug/course/table_section
-		include pug/author
-		include pug/testimonials
+		include pug/rec/feedback
 		include pug/footer
-		include pug/course/course_scripts
+		include pug/rec/rec_scripts
