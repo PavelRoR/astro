@@ -105,8 +105,10 @@ a.button
 .author_wrapper a
 	pointer-events: none
 #feedback
-	.col-md-6:last-child
-		background-color rgba(#fff,.9)
+	.col-md-6
+		margin-bottom: 25px
+		&:last-child
+			background-color rgba(#fff,.9)
 @import 'parts/first_screen'
 @import 'parts/mail_section'
 @import 'parts/risons'
@@ -326,6 +328,9 @@ a.button
 		overflow-x: hidden
 	#videos .days h4
 		font-size: 26px
+	#you_reach
+	#videos
+		background-attachment: scroll
 @media screen and (max-width: 420px)
 	.author_wrapper img
 		width: 100%
